@@ -1,0 +1,8 @@
+<h1>Divvy Stations</h1>
+
+<%= @employees.each do | employee | %>
+  <h3>Station: <%=  employee["station_name"] %><h3>
+  <h4>Id: <%=  employee["id"] %><h4>
+  <h4>Total Docks: <%=  employee["total_docks"] %><h4>
+  <br>
+<% end %>
